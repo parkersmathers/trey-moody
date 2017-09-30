@@ -1,0 +1,15 @@
+{
+  "globals": {
+    "title": "Weirdsite",
+    "owner": "Fluora Studio",
+    "author": "Trey Moody",
+    "content": [
+      "About",
+      "Author photo",
+      "Contact",
+      "Book",
+      "Publications",
+      "Events"
+    ]
+  }
+}

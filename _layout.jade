@@ -1,9 +1,10 @@
 html
 
   head
-    title Weirdsite
+    title #{title}
 
   body
     != yield
     hr
-    p Copyright #{new Date().getFullYear()}
+    pre This site was made by #{owner}
+    pre Copyright #{new Date().getFullYear()}
