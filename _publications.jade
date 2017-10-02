@@ -3,4 +3,5 @@ pre #{content[4]}:
 ul
   for publication in public.publications._data
     li
-      a(href='#{publication.url}') #{publication.title}
+      pre
+        a(href='#{publication.url}') #{publication.title}
