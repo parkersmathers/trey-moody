@@ -3,5 +3,53 @@
     "title": "Announcement",
     "publisher": "Gulf Coast",
     "url": "http://gulfcoastmag.org/journal/28.2/announcement/"
+  },
+
+  "equations": {
+    "title": "Equations",
+    "publisher": "Gulf Coast",
+    "url": "http://gulfcoastmag.org/journal/28.2/equations/"
+  },
+
+  "let-me-tell-you-how-sorry-i-am": {
+    "title": "Let Me Tell You How Sorry I Am",
+    "publisher": "Newfound",
+    "url": "https://newfound.org/archives/volume-7/issue-2/poetry-trey-moody/"
+  },
+
+  "night-poem": {
+    "title": "Night Poem",
+    "publisher": "Newfound",
+    "url": "https://newfound.org/archives/volume-7/issue-2/poetry-trey-moody/"
+  },
+
+  "same-day-resolution": {
+    "title": "Same-Day Resolution",
+    "publisher": "Boston Review",
+    "url": "http://bostonreview.net/poetry/same-day-resolution"
+  },
+
+  "salina-kansas": {
+    "title": "Salina, Kansas",
+    "publisher": "Linebreak",
+    "url": "https://linebreak.org/poems/salina-kansas/#"
+  },
+
+  "dear--": {
+    "title": "Dear--",
+    "publisher": "Verse Daily",
+    "url": "http://www.versedaily.org/2014/dear--.shtml"
+  },
+
+  "let-us": {
+    "title": "Let Us",
+    "publisher": "Sonora Review",
+    "url": "https://sonorareview.com/2011/07/29/trey-moody/"
+  },
+
+  "how-to-avoid-your-neighbors": {
+    "title": "How to Avoid Your Neighbors",
+    "publisher": "Diagram",
+    "url": "http://thediagram.com/15_5/moody.html"
   }
 }

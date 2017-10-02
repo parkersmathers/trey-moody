@@ -4,7 +4,4 @@ a(href='index.html') Home
 
 pre #{author}, poet
 
-ul
-  for publication, link in public.publications._data
-    li
-      a(href='/publications/#{link}.html') #{publication.title}
+!= partial('_publications')
