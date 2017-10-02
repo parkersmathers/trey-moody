@@ -1,7 +1,7 @@
-pre #{content[4]}:
-
-ul
-  for publication in public.publications._data
-    li
-      pre
-        a(href='#{publication.url}') #{publication.title}
+#publications
+  pre Publications:
+  ul
+    for publication in public.publications._data
+      li
+        pre
+          a(href='#{publication.url}') #{publication.title}

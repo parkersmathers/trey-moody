@@ -1,9 +1,10 @@
-!= partial('_bio')
+.box-for-two
+  != partial('_bio')
+  != partial('_photo')
 
-!= partial('_photo')
+.box-for-two
+  != partial('_publications')
+  != partial('_events')
 
-!= partial('_book')
-
-!= partial('_publications')
-
-!= partial('_events')
+div
+  != partial('_book')

@@ -1,15 +1,30 @@
 html, body {
   height: 100%;
+  max-width: 1280px;
 }
 
-html, body, header, footer, div {
+html, body, header, footer, div, ul {
   display: block;
   margin: 0;
   padding: 0;
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  padding: 1.5em;
+}
+
 ul {
   list-style: none;
+}
+
+pre {
+  white-space: pre-wrap;
 }
 
 a {
@@ -17,13 +32,10 @@ a {
   color: inherit;
 }
 
-*, ::before, ::after {
-  box-sizing: border-box;
-}
-
 #page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #page div,
@@ -31,10 +43,21 @@ a {
   width: 100%;
 }
 
+#page div.box-for-two {
+  display: flex;
+}
+
+#page div.box-for-two div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 header pre a {
   font-size: 3em;
 }
 
-#bio pre {
-  white-space: pre-wrap;
+footer {
+  display: flex;
+  justify-content: space-between;
 }
