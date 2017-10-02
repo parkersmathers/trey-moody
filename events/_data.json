@@ -1,0 +1,40 @@
+{
+  "private-reading-series": {
+    "name": "Private Reading Series",
+    "date": "date",
+    "time": "time",
+    "location": {
+      "venue": "venue X",
+      "street-address": "street address",
+      "city-state": "city, state",
+      "zip": "zip code",
+      "url": "link to event"
+    }
+  },
+
+  "official-reading-series": {
+    "name": "Official Reading Series",
+    "date": "date",
+    "time": "time",
+    "location": {
+      "venue": "venue Y",
+      "street-address": "street address",
+      "city-state": "city, state",
+      "zip": "zip code",
+      "url": "link to event"
+    }
+  },
+
+  "another-reading-series": {
+    "name": "Another Reading Series",
+    "date": "date",
+    "time": "time",
+    "location": {
+      "venue": "venue Z",
+      "street-address": "street address",
+      "city-state": "city, state",
+      "zip": "zip code",
+      "url": "link to event"
+    }
+  }
+}
