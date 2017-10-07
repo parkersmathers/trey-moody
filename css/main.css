@@ -13,10 +13,12 @@ html, body, header, footer, div, ul {
 }
 
 body {
+  width: 90%;
   max-width: 1280px;
   font-size: 1em;
   line-height: 1.4;
   padding: 2em;
+  margin: 0 auto;
 }
 
 ul {
@@ -53,6 +55,11 @@ a {
   flex-direction: column;
 }
 
+header pre {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+
 header pre a {
   font-size: 3em;
 }
@@ -67,18 +74,22 @@ header pre a {
 }
 
 #bio pre:first-child,
-#publications ul {
+#publications {
   background-color: rgb(255, 255, 255);
 }
 
 #publications {
-  padding-left: 3em;
-  margin-top: 3em;
+  padding-left: 1em;
+  margin-top: -1em;
   z-index: 1;
 }
 
 #book {
   margin-top: -3em;
+}
+
+#events {
+  visibility: hidden;
 }
 
 footer {

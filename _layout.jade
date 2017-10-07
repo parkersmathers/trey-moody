@@ -10,9 +10,6 @@ html(lang='en')
 
   body
     #page
-      header
-        pre
-          a(href='index.html') #{author}
       != yield
       footer
         pre © #{new Date().getFullYear()} #{author}
