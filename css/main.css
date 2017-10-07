@@ -15,14 +15,18 @@ html, body, header, footer, div, ul {
 body {
   width: 90%;
   max-width: 1280px;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 1.1em;
+  line-height: 1.5;
   padding: 2em;
   margin: 0 auto;
 }
 
 ul {
   list-style: none;
+}
+
+ul li pre {
+  margin: .5em 0;
 }
 
 pre {
@@ -58,6 +62,7 @@ a {
 header pre {
   transform: rotate(90deg);
   transform-origin: left top 0;
+  margin: 0;
 }
 
 header pre a {
@@ -65,12 +70,15 @@ header pre a {
 }
 
 #photo {
-  margin-right: 3em;
+  /*margin-right: 3em;*/
 }
 
 #bio {
   margin-right: -3em;
   z-index: 1;
+}
+#bio pre:first-child {
+  padding-top: 1em;
 }
 
 #bio pre:first-child,
@@ -79,17 +87,23 @@ header pre a {
 }
 
 #publications {
+  margin-left: 4em;
   padding-left: 1em;
   margin-top: -1em;
   z-index: 1;
 }
 
-#book {
-  margin-top: -3em;
+#events {
+  margin-top: -1em;
+  visibility: hidden;
 }
 
-#events {
-  visibility: hidden;
+#page .book-box {
+  width: 80%;
+}
+
+#book {
+  margin-top: -2em;
 }
 
 footer {
