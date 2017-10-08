@@ -6,7 +6,7 @@
     "location": {
       "venue": "venue X",
       "street-address": "street address",
-      "city-state": "city, state",
+      "city_state": "city, state",
       "zip": "zip code",
       "url": "link to event"
     }
@@ -19,7 +19,7 @@
     "location": {
       "venue": "venue Y",
       "street-address": "street address",
-      "city-state": "city, state",
+      "city_state": "city, state",
       "zip": "zip code",
       "url": "link to event"
     }
@@ -32,7 +32,7 @@
     "location": {
       "venue": "venue Z",
       "street-address": "street address",
-      "city-state": "city, state",
+      "city_state": "city, state",
       "zip": "zip code",
       "url": "link to event"
     }
