@@ -147,7 +147,10 @@ footer pre {
     align-self: flex-end;
     margin: 1em 0 0;
     padding: 0 2em .5em;
-    background-color: rgba(128, 255, 0, 0.5);
+    background-color: inherit;
+  }
+  #events li:first-child {
+    background-color: rgba(128, 255, 0, 0.5)
   }
   #events ul,
   #events pre {
@@ -162,6 +165,6 @@ footer pre {
     width: 100%;
   }
   #book {
-    margin-top: -1em;
+    margin-top: 0;
   }
 }
