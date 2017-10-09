@@ -96,9 +96,19 @@ header pre a {
 #events {
   align-self: flex-end;
   margin-bottom: 3em;
+  margin-right: -4em;
+  padding: 0 1em .5em;
+  background-color: rgba(128, 255, 0, 0.5);
+}
+
+#events ul,
+#events pre {
   visibility: hidden;
-  /*margin-top: -1em;*/
-  /*visibility: hidden;*/
+}
+
+#events:hover ul,
+#events:hover pre {
+  visibility: visible;
 }
 
 #page .book-box {
@@ -133,20 +143,19 @@ footer pre {
   #page div.box-for-two {
     flex-direction: column;
   }
-  #page div:nth-child(3n) {
-    display: flex;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-  }
-  /*#page div:nth-child(3n) > div {
-    width: 100%;
-  }*/
   #events {
-    margin-bottom: 0;
+    align-self: flex-end;
+    margin: 1em 0 0;
+    padding: 0 2em .5em;
+    background-color: rgba(128, 255, 0, 0.5);
+  }
+  #events ul,
+  #events pre {
+    visibility: visible;
   }
   #publications {
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 2em;
     margin-top: 0;
   }
   #page .book-box {
