@@ -1,10 +1,15 @@
 #events
   pre
-    a(href='') Events:
-  ul
-    for event in public.events._data
-      li
-        pre #{event.name} @ #{event.location.venue}
+    a(href='') Readings: Stay tuned!
+  //-
+    ul
+      for event in public.events._data
+        li
+          pre #{event.name} @ #{event.location.venue}
+  //
+  pre Follow:
   pre
-    a(href='https://twitter.com/treyismoody')
-      img(src='images/twitter-logo.png')
+    a(href='https://twitter.com/treyismoody' target='_blank')
+      img(src='images/twitter-logo.svg' class='logo twitter')
+    a(href='https://www.instagram.com/ydoomyert/' target='_blank')
+      img(src='images/instagram-glyph.png' class='logo instagram')

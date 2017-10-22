@@ -97,7 +97,7 @@ header pre a {
   align-self: flex-start;
   margin-top: 1em;
   margin-right: -4em;
-  padding: 0 1em 4em;
+  padding: 0 1em 0;
   background-color: rgba(128, 255, 0, 0.5);
 }
 
@@ -106,6 +106,17 @@ header pre a {
   visibility: hidden;
 }
 
+#events > pre > a {
+  padding-right: 1em;
+}
+
+#events a img.logo {
+  width: 2em;
+  height: 2em;
+}
+.instagram {
+  opacity: .2;
+}
 #events:hover ul,
 #events:hover pre {
   visibility: visible;
