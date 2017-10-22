@@ -1,8 +1,10 @@
 #events
   pre
-    a(href="") Events:
+    a(href='') Events:
   ul
     for event in public.events._data
       li
         pre #{event.name} @ #{event.location.venue}
-        
+  pre
+    a(href='https://twitter.com/treyismoody')
+      img(src='images/twitter-logo.png')
