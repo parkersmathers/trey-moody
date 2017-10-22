@@ -4,6 +4,14 @@
     "owner": "Fluora Studio",
     "author": "Trey Moody",
     "contact": "treyemoody@yahoo.com",
+    "twitter": {
+      "url": "https://twitter.com/treyismoody",
+      "logo": "images/twitter-logo.svg"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/ydoomyert/",
+      "logo": "images/instagram-glyph.png"
+    },
     "content": [
       "Bio",
       "Contact",
