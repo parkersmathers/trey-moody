@@ -2,7 +2,7 @@ html, body {
   height: 100%;
 }
 
-html, body, header, footer, div, ul {
+html, body, header, footer, div, ul, pre, a {
   display: block;
   margin: 0;
   padding: 0;
@@ -69,16 +69,14 @@ header pre a {
   font-size: 3em;
 }
 
-#photo {
-  /*margin-right: 3em;*/
-}
-
 #bio {
   margin-right: -3em;
   z-index: 1;
 }
-#bio pre:first-child {
+
+#bio pre {
   padding-top: 1em;
+  padding-right: .5em;
 }
 
 #bio pre:first-child,
@@ -86,16 +84,21 @@ header pre a {
   background-color: rgb(255, 255, 255);
 }
 
+#photo {
+  margin-top: -1em;
+}
+
 #publications {
   margin-left: 4em;
   padding-left: 1em;
   margin-top: -1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   z-index: 1;
 }
 
 #events {
   align-self: flex-start;
-  margin-left: -1em;
   margin-right: -4em;
   padding: 3em 1em;
   background-color: rgba(128, 255, 0, 0.5);
@@ -106,20 +109,23 @@ header pre a {
   visibility: hidden;
 }
 
-#events > pre > a {
+#events pre {
+  padding-left: 2em;
+}
+
+#events pre a {
   padding-right: 1em;
+  padding-left: .5em;
 }
 
 #events a img.logo,
 footer pre a img.logo {
-  width: 2em;
-  height: 2em;
-  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  color: inherit;
 }
-.instagram {
-  /*opacity: .2;*/
-}
-.twitter {
+
+#events a img.twitter {
   background-color: black;
 }
 
@@ -134,6 +140,7 @@ footer pre a img.logo {
 
 #book {
   margin-top: -2em;
+  margin-bottom: 1em;
 }
 
 footer {
@@ -143,7 +150,21 @@ footer {
 }
 
 footer pre {
-  padding: 1em 2em 1em 0;
+  padding: 1em;
+}
+
+footer pre:first-child {
+  margin-left: -1em;
+}
+
+footer pre a {
+  display: flex;
+  line-height: 1;
+  background-color: rgba(128, 255, 0, 0.5);
+}
+
+footer pre a img.instagram {
+  opacity: .2;
 }
 
 @media screen and (max-width: 800px) {
@@ -162,7 +183,9 @@ footer pre {
   #page div.box-for-two {
     flex-direction: column;
   }
-  #events {
+  #page div.box-for-two > #events {
+    display: none;
+    flex: 0;
     align-self: flex-end;
     margin: 1em 0 0;
     padding: 0 2em .5em;
@@ -177,9 +200,10 @@ footer pre {
     visibility: visible;
   }
   #publications {
-    margin-left: 0;
-    padding-left: 2em;
     margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 1em;
+    padding-left: 2em;
   }
   #page .book-box {
     width: 100%;
