@@ -199,11 +199,17 @@ footer pre a img.instagram {
   #events pre {
     visibility: visible;
   }
+  #photo {
+    margin-top: 1em;
+  }
   #publications {
     margin-top: 0;
     margin-left: 0;
     padding-bottom: 1em;
     padding-left: 2em;
+  }
+  #publications > pre:first-child {
+    background-color: rgba(128, 255, 0, 0.5);
   }
   #page .book-box {
     width: 100%;
