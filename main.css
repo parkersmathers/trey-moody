@@ -95,9 +95,9 @@ header pre a {
 
 #events {
   align-self: flex-start;
-  margin-top: 1em;
+  margin-left: -1em;
   margin-right: -4em;
-  padding: 0 1em 2em;
+  padding: 3em 1em;
   background-color: rgba(128, 255, 0, 0.5);
 }
 
@@ -110,12 +110,17 @@ header pre a {
   padding-right: 1em;
 }
 
-#events a img.logo {
+#events a img.logo,
+footer pre a img.logo {
   width: 2em;
   height: 2em;
+  color: black;
 }
 .instagram {
-  opacity: .2;
+  /*opacity: .2;*/
+}
+.twitter {
+  background-color: black;
 }
 
 #events:hover ul,
@@ -133,10 +138,12 @@ header pre a {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 footer pre {
-  padding: 1em 0;
+  padding: 1em 2em 1em 0;
 }
 
 @media screen and (max-width: 800px) {
