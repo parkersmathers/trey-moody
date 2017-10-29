@@ -206,7 +206,7 @@ footer pre a img.instagram {
   #publications {
     margin-top: 0;
     margin-left: 0;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
     padding-left: 2em;
   }
   #publications > pre:first-child {
