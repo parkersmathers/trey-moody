@@ -79,6 +79,10 @@ header pre a {
   padding-right: .5em;
 }
 
+#bio pre:last-child a {
+  display: inline-block;
+}
+
 #bio pre:first-child,
 #publications {
   background-color: rgb(255, 255, 255);
