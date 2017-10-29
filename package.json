@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.4.0",
+    "imagemin-jpeg-recompress": "^5.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -14,7 +14,7 @@ gulp.task('images', function () {
         quality:'high'
       })
     ]))
-    .pipe(gulp.dest('images'))
+    .pipe(gulp.dest('public/images'))
 })
 
 // run
