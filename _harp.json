@@ -1,6 +1,6 @@
 {
   "globals": {
-    "title": "Weirdsite",
+    "title": "Trey Moody",
     "owner": "Fluora Studio",
     "author": "Trey Moody",
     "contact": "treyemoody@yahoo.com",
@@ -11,6 +11,9 @@
     "instagram": {
       "url": "https://www.instagram.com/ydoomyert/",
       "logo": "images/instagram-glyph.png"
+    },
+    "favicon": {
+      
     },
     "content": [
       "Bio",
