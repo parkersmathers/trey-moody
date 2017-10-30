@@ -97,7 +97,6 @@ header pre a {
   padding-left: 1em;
   margin-top: -1em;
   padding-top: 1em;
-  /*padding-bottom: 1em;*/
   z-index: 1;
 }
 
@@ -188,21 +187,27 @@ footer pre a img.instagram {
   #page div.box-for-two {
     flex-direction: column;
   }
-  #page div.box-for-two > #events {
-    display: none;
-    flex: 0;
+  #page div.box-for-two #events {
     align-self: flex-end;
-    margin: 1em 0 0;
-    padding: 0 2em .5em;
-    background-color: inherit;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: .5em 2em;
+    background-color: rgba(128, 255, 0, 0.5);
   }
   #events li:first-child,
   #events pre:last-child {
-    background-color: rgba(128, 255, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   #events ul,
   #events pre {
     visibility: visible;
+    padding-left: 0;
+  }
+  #events pre a {
+    padding: 1em .5em 0;
   }
   #photo {
     margin-top: 1em;
@@ -212,9 +217,6 @@ footer pre a img.instagram {
     margin-left: 0;
     padding-bottom: .5em;
     padding-left: 2em;
-  }
-  #publications > pre:first-child {
-    background-color: rgba(128, 255, 0, 0.5);
   }
   #page .book-box {
     width: 100%;
