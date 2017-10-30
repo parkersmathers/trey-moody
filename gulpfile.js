@@ -7,13 +7,16 @@ var gulp         = require('gulp'),
 gulp.task('images', function () {
   gulp.src('images/*')
     .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 5}),
       jpegRecompress({
-        loops:4,
+        loops: 4,
         min: 50,
-        max: 95,
+        max: 85,
         quality:'high'
       })
-    ]))
+    ], {
+      verbose: true
+    }))
     .pipe(gulp.dest('public/images'))
 })
 
