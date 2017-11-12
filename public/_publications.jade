@@ -1,7 +1,7 @@
 #publications
-  pre Writing Online:
+  h2 Writing Online:
   ul
     for publication in public.publications._data
       li
-        pre
+        h3
           a(href='#{publication.url}' target="_blank") #{publication.title} // #{publication.publisher}
