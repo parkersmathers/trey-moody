@@ -176,11 +176,9 @@ footer pre a img.instagram {
     font-size: .9em;
     padding: 1em;
   }
-  header pre {
+  header h1 {
     transform: rotate(0deg);
     transform-origin: left top 0;
-  }
-  header pre a {
     font-size: 2.5em;
   }
   #page div.box-for-two {
@@ -201,6 +199,7 @@ footer pre a img.instagram {
     justify-content: flex-start;
   }
   #events ul,
+  #events h2,
   #events pre {
     visibility: visible;
     padding-left: 0;
