@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE"
+      },
+      "email": "mailto:treyemoody@yahoo.com",
+      "image": "trey-moody-photo.jpg",
+      "name": "Trey Moody",
+      "url": "https://treymoody.org"
+    },
+    {
+      "@type": "Book",
+      "award": "Kathryn A. Morton Prize in Poetry",
+      "copyrightYear": "2014",
+      "image": "thought-that-nature-cover.jpg",
+      "name": "Thought That Nature",
+      "publisher": "Sarabande Books"
+    }
+  ]
+}
+</script>
