@@ -6,7 +6,7 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title #{title}
     link(rel='canonical', href='https://treymoody.org/')
-    meta(name='description', content='Official website of the poet Trey Moody, author of the book Thought That Nature (Sarabande Books, 2014).')
+    meta(name='description', content='Trey Moody is the author of the poetry collection Thought That Nature. Read his poems online and stay tuned for upcoming readings and events.')
     meta(property='og:title', content='Trey Moody - poetry, publications, events')
     meta(property='og:url', content='https://treymoody.org/')
     meta(property='og:type', content='website')
@@ -23,16 +23,12 @@ html(lang='en')
     meta(itemprop='image', content='https://treymoody.org/images/trey-moody-photo.jpg')
     link(rel='stylesheet', href='main.css')
     != partial('_gtag')
+  
   body
     #page
+
       != yield
-      footer
-        pre © #{new Date().getFullYear()} #{author}
-        pre
-          a(href=twitter.url target='_blank')
-            img(src=twitter.logo class='logo twitter')
-        pre
-          a(href=instagram.url target='_blank')
-            img(src=instagram.logo class='logo instagram')
-            
+
+      != partial('_footer')
+
     != partial('_gtag')
