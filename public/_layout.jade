@@ -4,6 +4,8 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    script(type='application/ld+json')
+      include ./_schema.js
     title #{title}
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name='description', content='#{description}')
@@ -19,9 +21,6 @@ html(lang='en')
     meta(name='twitter:title', content='Trey Moody - poetry, publications, events')
     meta(name='twitter:url', content='https://treymoody.org/')
     meta(name='twitter:image', content='https://treymoody.org/images/trey-moody-photo.jpg')
-    meta(itemprop='name', content='Trey Moody')
-    meta(itemprop='description', content='Trey Moody - poetry, publications, events')
-    meta(itemprop='image', content='https://treymoody.org/images/trey-moody-photo.jpg')
     link(rel='stylesheet', href='main.css')
     != partial('_gtag')
   
