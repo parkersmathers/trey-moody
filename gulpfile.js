@@ -1,13 +1,14 @@
 var gulp         = require('gulp'),
     imagemin     = require('gulp-imagemin'),
-    jpegRecompress = require('imagemin-jpeg-recompress')
+    jpegRecompress = require('imagemin-jpeg-recompress'),
+    imageminPngquant = require('imagemin-pngquant')
 
 // process images
 
 gulp.task('images', function () {
   gulp.src('images/*')
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 5}),
+      imageminPngquant(),
       jpegRecompress({
         loops: 4,
         min: 50,
