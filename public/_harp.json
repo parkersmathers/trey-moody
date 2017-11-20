@@ -16,13 +16,13 @@
 
     },
     "description": "Trey Moody is the author of the poetry collection Thought That Nature. He lives in Omaha, Nebraska, and teaches in the MFA Program at Creighton University. Read his poems online, and stay tuned for upcoming readings and events.",
-    "content": [
-      "Bio",
-      "Contact",
-      "Author photo",
-      "Book",
-      "Publications",
-      "Events"
+    "service": [
+      {
+        "analytics": "UA-109695314-1"
+      },
+      {
+        "tagmanager": "GTM-WVQMSKP"
+      }
     ]
   }
 }
