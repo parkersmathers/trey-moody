@@ -1,5 +1,5 @@
 doctype html
-html(lang='en' prefix='og: http://ogp.me/ns#')
+html(lang='en' xmlns="http://www.w3.org/1999/xhtml" xmlns:og='http://ogp.me/ns#' xmlns:fb='https://www.facebook.com/2008/fbml')
 
   head
     meta(charset='utf-8')
@@ -9,15 +9,16 @@ html(lang='en' prefix='og: http://ogp.me/ns#')
     != partial('_favicon')
     link(rel='canonical', href='https://treymoody.org/')
     meta(name='description', content='#{description}')
-    
-    meta(property='og:title', content='Trey Moody')
+    //- Open Graph data
     meta(property='og:url', content='https://treymoody.org/')
     meta(property='og:type', content='website')
-    meta(property='og:description', content='#{description}')
+    meta(property='og:title', content='Trey Moody')
     meta(property='og:image', content='https://treymoody.org/images/trey-moody-photo.jpg')
-    
+    meta(property='og:site_name', content='Trey Moody')
+    meta(property='og:description', content='#{description}')
+    //- Twitter Card data
     meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content='Trey Moody - poetry, publications, events')
+    meta(name='twitter:title', content='Trey Moody')
     meta(name='twitter:url', content='https://treymoody.org/')
     meta(name='twitter:image', content='https://treymoody.org/images/trey-moody-photo.jpg')
     

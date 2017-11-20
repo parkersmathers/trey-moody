@@ -2,6 +2,11 @@
   "@context": "http://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "name": "Trey Moody",
+      "url": "https://treymoody.org"
+    },
+    {
       "@type": "Person",
       "address": {
         "@type": "PostalAddress",
@@ -9,23 +14,8 @@
         "addressRegion": "NE"
       },
       "birthPlace": "San Antonio, TX",
-      "email": "mailto:treyemoody@yahoo.com",
       "image": "https://treymoody.org/images/trey-moody-photo.jpg",
       "name": "Trey Moody",
-      "sponsor": [
-        {
-          "@type": "Organization",
-          "name": "Academy of American Poets"
-        },
-        {
-          "@type": "Organization",
-          "name": "Slope Editions"
-        },
-        {
-          "@type": "Organization",
-          "name": "University of Nebraska, Lincoln"
-        }
-      ],
       "url": "https://treymoody.org",
       "sameAs": [
         "http://twitter.com/treyismoody",
@@ -41,15 +31,73 @@
       "award": "Kathryn A. Morton Prize in Poetry",
       "author": "Trey Moody",
       "copyrightYear": "2014",
-      "image": "thought-that-nature-cover.jpg",
+      "image": "https://treymoody.org/images/thought-that-nature-cover.jpg",
       "name": "Thought That Nature",
       "publisher": "Sarabande Books"
     },
     {
-      "@type": "Periodical",
-      "name": "Announcement",
-      "publisher": "Gulf Coast",
-      "url": "http://gulfcoastmag.org/journal/28.2/announcement/"
+      "@type" : "CreativeWork",
+      "name" : "Equations",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Gulf Coast"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Study Beginning on a Bedroom Ceiling",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "TYPO"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Two Poems",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Newfound"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Same-Day Resolution",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Boston Review"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Salina, Kansas",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Linebreak"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Dear--",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Verse Daily"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "Let Us",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "Sonora Review"
+      }
+    },
+    {
+      "@type" : "CreativeWork",
+      "name" : "How to Avoid Your Neighbors",
+      "publisher" : {
+        "@type" : "Organization",
+        "name" : "DIAGRAM"
+      }
     }
   ]
 }
