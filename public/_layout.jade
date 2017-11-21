@@ -4,6 +4,9 @@ html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#'
   head
     //- Google Tag Manager
     != partial('_gtag')
+    //- Schema.org
+    script(type='application/ld+json')
+      include ./_schema.json
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -23,12 +26,8 @@ html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#'
     meta(name='twitter:title', content='Trey Moody')
     meta(name='twitter:url', content='https://treymoody.org/')
     meta(name='twitter:image', content='https://treymoody.org/images/trey-moody-photo.jpg')
-    //- Schema.org
-    script(type='application/ld+json')
-      include ./_schema.js
     //- Stylesheets
     link(rel='stylesheet', href='main.css')
-    link(rel='stylesheet', href='mobile.css' media="(max-width: 800px)")
   
   body
     //- Google Tag Manager (noscript)
