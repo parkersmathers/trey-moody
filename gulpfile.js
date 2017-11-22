@@ -4,7 +4,8 @@ var gulp         = require('gulp'),
     revDel       = require('rev-del'),
     imagemin     = require('gulp-imagemin'),
     jpegRecompress = require('imagemin-jpeg-recompress'),
-    imageminPngquant = require('imagemin-pngquant')
+    imageminPngquant = require('imagemin-pngquant'),
+    cssnano      = require('gulp-cssnano')
 
 // process images
 
@@ -23,6 +24,14 @@ gulp.task('images', function () {
     }))
     .pipe(gulp.dest('public/images'))
 })
+
+// minify css
+
+gulp.task('minify', function() {
+    return gulp.src('dist/main.css')
+        .pipe(cssnano())
+        .pipe(gulp.dest('dist'));
+});
 
 // File Revision
 
