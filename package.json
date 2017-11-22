@@ -7,8 +7,11 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.4.0",
+    "gulp-rev": "^8.1.0",
+    "gulp-rev-collector": "^1.2.3",
     "imagemin-jpeg-recompress": "^5.1.0",
-    "imagemin-pngquant": "^5.0.1"
+    "imagemin-pngquant": "^5.0.1",
+    "rev-del": "^1.0.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
