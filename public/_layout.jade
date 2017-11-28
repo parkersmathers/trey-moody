@@ -11,9 +11,10 @@ html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#'
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title #{title}
-    != partial('_favicon')
     link(rel='canonical', href='https://treymoody.org/')
     meta(name='description', content='#{description}')
+    != partial('_favicon')
+    link(rel='manifest', href='manifest.json')
     //- Open Graph data
     meta(property='og:url', content='https://treymoody.org/')
     meta(property='og:type', content='website')
@@ -30,10 +31,13 @@ html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#'
     link(rel='stylesheet', href='main.css')
   
   body
-    //- Google Tag Manager (noscript)
-    != partial('_gtag2')
-    #page
-      != yield
-      != partial('_footer')
-    //- Google Analytics
-    != partial('_analytics')
+      //- Google Tag Manager (noscript)
+      != partial('_gtag2')
+      #page
+        template
+          != yield
+          != partial('_footer')
+      //- Google Analytics
+      != partial('_analytics')
+      //- lazy load image
+      script(src='io.js')

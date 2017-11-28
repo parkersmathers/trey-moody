@@ -28,9 +28,9 @@ gulp.task('images', function () {
 // minify css
 
 gulp.task('minify', function() {
-    return gulp.src('dist/main.css')
+    return gulp.src('public/main.css')
         .pipe(cssnano())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('../par-ker.bitbucket.io'));
 });
 
 // File Revision

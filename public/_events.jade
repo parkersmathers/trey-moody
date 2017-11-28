@@ -7,7 +7,7 @@
           pre #{event.name} @ #{event.location.venue}
   //
   pre 
-    a(href=twitter.url target='_blank')
-      img(src=twitter.logo class='logo twitter')
-    a(href=instagram.url target='_blank')
-      img(src=instagram.logo class='logo instagram')
+    a(href=twitter.url target='_blank' rel='noopener' aria-label='twitter')
+      img(src=twitter.logo class='logo twitter' alt='treyismoody' )
+    a(href=instagram.url target='_blank' aria-label='instagram' rel='noopener')
+      img(src=instagram.logo class='logo instagram' alt='ydoomyert')
