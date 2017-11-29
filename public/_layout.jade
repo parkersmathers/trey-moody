@@ -1,13 +1,11 @@
 doctype html
-html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#' xmlns:fb='https://www.facebook.com/2008/fbml')
+html(lang='en' xmlns:og='http://ogp.me/ns#' xmlns:fb='https://www.facebook.com/2008/fbml')
 
   head
-    //- Google Tag Manager
-    != partial('_gtag')
+    meta(charset='utf-8')
     //- Schema.org
     script(type='application/ld+json')
       include ./_schema.json
-    meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title #{title}
@@ -29,15 +27,17 @@ html(lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:og='http://ogp.me/ns#'
     meta(name='twitter:image', content='https://treymoody.org/images/trey-moody-photo.jpg')
     //- Stylesheets
     link(rel='stylesheet', href='main.css')
-  
+    //- Google Tag Manager
+    != partial('_gtag')
+
   body
-      //- Google Tag Manager (noscript)
-      != partial('_gtag2')
-      #page
-        template
-          != yield
-          != partial('_footer')
-      //- Google Analytics
-      != partial('_analytics')
-      //- lazy load image
-      script(src='io.js')
+    //- Google Tag Manager (noscript)
+    != partial('_gtag2')
+    #page
+      template
+        != yield
+        != partial('_footer')
+    //- Google Analytics
+    != partial('_analytics')
+    //- lazy load image
+    script(src='io.js')
