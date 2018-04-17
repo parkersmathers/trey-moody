@@ -1,5 +1,8 @@
 .DS_Store
 dist
+gulpfile.js
+io.js
 node_modules
 ns.txt
-/sitemap.xml
+package-lock.json
+package.json

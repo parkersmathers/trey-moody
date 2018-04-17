@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://treymoody.org/</loc>
+    <image:image>
+       <image:loc>https://treymoody.org/images/trey-moody-photo.jpg</image:loc>
+       <image:caption>Trey Moody</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>https://treymoody.org/images/thought-that-nature-cover.jpg</image:loc>
+       <image:caption>Thought That Nature - book cover</image:caption>
+    </image:image>
+  </url>
+</urlset>

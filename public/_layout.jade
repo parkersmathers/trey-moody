@@ -34,9 +34,8 @@ html(lang='en' xmlns:og='http://ogp.me/ns#' xmlns:fb='https://www.facebook.com/2
     //- Google Tag Manager (noscript)
     != partial('_gtag2')
     #page
-      template
-        != yield
-        != partial('_footer')
+      != yield
+      != partial('_footer')
     //- Google Analytics
     != partial('_analytics')
     //- lazy load image
